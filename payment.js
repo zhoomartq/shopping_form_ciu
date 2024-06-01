@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function goBack() {
     alert("Back button clicked. Implement your logic here.");
-    // Add your "Back" button logic here
 }
 
 function continuePayment() {
@@ -30,6 +29,5 @@ function continuePayment() {
         }
     }
 
-    // Redirect to product form
     window.location.href = 'shopping.html';
 }
