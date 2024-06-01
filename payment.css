@@ -1,59 +1,56 @@
 body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0;
+    height: 100vh;
 }
 
 .payment-form {
     background-color: #fff;
-    border-radius: 10px;
-    padding: 2rem;
-    width: 400px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
 }
 
 .payment-form h2 {
-    margin: 0 0 1rem;
+    margin-bottom: 10px;
+    font-size: 1.5em;
 }
 
 .payment-form p {
-    margin-bottom: 1rem;
-    color: #888;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #666;
 }
 
 .payment-method {
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
 }
 
 .payment-method label {
     display: block;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.card-details label {
+    display: block;
     margin-bottom: 5px;
 }
 
-.payment-method input[type="radio"] {
-    margin-right: 10px;
-}
-
-.card-details {
-    display: none;
-}
-
-#credit-card:checked ~ .card-details {
-    display: block;
-}
-
-.payment-form input[type="text"] {
-    width: 100%;
+.card-details input {
+    width: calc(100% - 20px);
     padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-size: 1em;
 }
 
 .payment-buttons {
@@ -62,14 +59,15 @@ body {
 }
 
 .payment-buttons button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #001F54;
+    color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    font-size: 1em;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .payment-buttons button:hover {
-    background-color: #0069d9;
+    background-color: #0056b3;
 }
