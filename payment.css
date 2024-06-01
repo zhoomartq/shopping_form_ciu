@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.payment-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form h2 {
+    margin: 0 0 1rem;
+}
+
+.payment-form p {
+    margin-bottom: 1rem;
+    color: #888;
+}
+
+.payment-method {
+    margin-bottom: 1rem;
+}
+
+.payment-method label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.payment-method input[type="radio"] {
+    margin-right: 10px;
+}
+
+.card-details {
+    display: none;
+}
+
+#credit-card:checked ~ .card-details {
+    display: block;
+}
+
+.payment-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.payment-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-buttons button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.payment-buttons button:hover {
+    background-color: #0069d9;
+}
